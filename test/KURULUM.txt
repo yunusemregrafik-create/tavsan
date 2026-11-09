@@ -1,0 +1,13 @@
+TAVŞAN YENİ SÜRÜM – GÜVENLİ KURULUM
+
+1. Önce mevcut Tavşan uygulamasından Ayarlar > Yedek indir.
+2. GitHub deponun ana dalında mevcut index.html ve sw.js dosyalarının yedeğini sakla.
+3. Bu paketteki index.html ve sw.js dosyalarını birlikte yükle.
+4. GitHub Pages güncellenince Chrome üzerinden Tavşan’ı aç ve Google ile giriş durumunu kontrol et.
+5. Ayarlar > Bildirimleri etkinleştir; ardından Test bildirimi göster.
+6. Takvimim > Google Takvim’e bağlan.
+
+DİKKAT: sw.js önceden var olan servis çalışanını değiştirir; mevcut çevrimdışı önbellek davranışı farklı olabilir.
+FCM cihaz kaydı, otomatik 08.30 bildirim gönderimi değildir. Kapalıyken saatli bildirim için ayrı güvenli sunucu/zamanlayıcı gerekir.
+Firestore kuralları users/{uid}/pushTokens/{deviceId} yazmaya izin vermiyorsa cihaz kaydı hata verir. Kuralları körlemesine gevşetmeyin.
+Google Calendar OAuth test modunda iznin süresi dolabilir; tekrar bağlanmanız gerekebilir.
